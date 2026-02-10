@@ -9,3 +9,5 @@ joblib==1.4.2
 scikit-learn==1.4.2
 imbalanced-learn==0.12.2
 catboost==1.2.5
+
+gunicorn==21.2.0
