@@ -55,13 +55,9 @@ app = Flask(__name__)
 CORS(app)
 swagger = Swagger(app)
 
-@app.route("/ui")
-def ui():
-    return send_from_directory(".", "index.html")  # index.html sejajar app.py
-
 @app.route("/")
 def home():
-    return jsonify({"message": "Test API"})
+    return send_from_directory(".", "index.html")
 
 # =========================
 # Swagger spec (same as yours)
