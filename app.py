@@ -120,7 +120,7 @@ PREDICT_SWAGGER = {
     }
 }
 
-@app.route("/predict", methods=["POST"])
+@app.route("/api/predict", methods=["POST"])
 @swag_from(PREDICT_SWAGGER)
 def predict():
     try:
